@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
   <title>{{ $app[0]->name_app }} - {{ $title }}</title>
   <meta name="description" content="{{ $app[0]->description_app }}" />
-  <link rel="icon" type="image/x-icon" href="{{ asset('storage/'. $app[0]->logo) }}" />
+  <link rel="icon" type="image/x-icon" href="@if(Storage::disk('public')->exists('logo-aplikasi')) {{ asset('storage/' . $app[0]->logo) }} @else {{ asset('assets/img/logo-aplikasi/logo.svg') }} @endif" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
@@ -32,7 +32,7 @@
           <div class="card-body">
             <div class="app-brand justify-content-center">
               <a href="/" class="app-brand-link gap-2">
-                <img src="{{ asset('storage/' . $app[0]->logo) }}" class="h-auto bx-tada" style="width: 28px;" alt="Logo-{{ $app[0]->name_app }}"><span class="app-brand-text text-body fw-bolder text-primary" style="font-size: 1.7rem; font-family: 'Lobster', cursive; letter-spacing:1px;">{{ $app[0]->name_app }}</span>
+                <img src="@if(Storage::disk('public')->exists('logo-aplikasi')) {{ asset('storage/' . $app[0]->logo) }} @else {{ asset('assets/img/logo-aplikasi/logo.svg') }} @endif" class="h-auto bx-tada" style="width: 28px;" alt="Logo-{{ $app[0]->name_app }}"><span class="app-brand-text text-body fw-bolder text-primary" style="font-size: 1.7rem; font-family: 'Lobster', cursive; letter-spacing:1px;">{{ $app[0]->name_app }}</span>
               </a>
             </div>
             <h4 class="mb-2">Welcome Back!</h4>
