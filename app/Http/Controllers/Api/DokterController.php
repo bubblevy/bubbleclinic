@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Database\QueryException;
 use App\Models\User;
+use Illuminate\Support\Facades\Storage;
 
 class DokterController extends Controller
 {
@@ -13,12 +14,17 @@ class DokterController extends Controller
     {
         try {
             $detailDokter = User::where('is_admin', true)->first();
+            if (Storage::disk('public')->exists('profil-images')) {
+                $image = request()->getSchemeAndHttpHost() . "/storage/" . $detailDokter->image;
+            } else {
+                $image = request()->getSchemeAndHttpHost() . "/assets/img/profil-images-default/1.jpeg";
+            }
             return response()->json([
                 'message' => 'Get dokter successfully!',
                 'data' => [
                     'name' => $detailDokter->name,
                     'gender' => $detailDokter->gender,
-                    'profile_image' =>  request()->getSchemeAndHttpHost() . "/storage/" . $detailDokter->image,
+                    'profile_image' =>  $image,
                     'address' => $detailDokter->alamat,
                     'email' => $detailDokter->email
                 ]
