@@ -32,7 +32,7 @@
 #### 1. Clone the repository
 
 ```sh
-git clone https://github.com/bubblevy/BubbleClinic.git
+git clone https://github.com/bubblevy/bubbleclinic.git
 ```
 
 #### 2. Copy .env
