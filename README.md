@@ -78,7 +78,7 @@ php artisan migrate
 php artisan db:seed
 ```
 
-#### 9. Reset Antrian every day, You can see and edit the code in the <b>App/Console/Kernel.php</b> folder
+#### 9. Reset antrian every day with cron job
 
 ```sh
 php artisan schedule:work
