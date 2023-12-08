@@ -89,6 +89,7 @@ php artisan schedule:work
 ```sh
 php artisan serve
 ```
+<i><b>Note: username: admin & password: @Admin123</b></i>
 
 ## License
 
