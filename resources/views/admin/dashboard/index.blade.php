@@ -85,7 +85,7 @@
 </div>
 
 <div class="row">
-  <div class="col-md-6 col-lg-4 order-0 mb-4">
+  <div class="col-md-6 col-lg-5 order-0 mb-4">
     <div class="card h-100">
       <div class="card-header">
         <div>
@@ -131,7 +131,7 @@
     </div>
   </div>
 
-  <div class="col-md-6 col-lg-8 order-2 mb-4">
+  <div class="col-md-6 col-lg-7 order-2 mb-4">
     <div class="card h-100">
       <div class="card-body">
         {!! $chart->container() !!}
