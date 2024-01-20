@@ -35,14 +35,14 @@
                 <img src="@if(Storage::disk('public')->exists('logo-aplikasi')) {{ asset('storage/' . $app[0]->logo) }} @else {{ asset('assets/img/logo-aplikasi/logo.svg') }} @endif" class="h-auto bx-tada" style="width: 28px;" alt="Logo-{{ $app[0]->name_app }}"><span class="app-brand-text text-body fw-bolder text-primary" style="font-size: 1.7rem; font-family: 'Lobster', cursive; letter-spacing:1px;">{{ $app[0]->name_app }}</span>
               </a>
             </div>
-            <h4 class="mb-2">Welcome Back!</h4>
-            <p class="mb-3">Silahkan login untuk mengelola fitur antrian.</p>
+            <h4 class="mb-2">Inicio de sesion.</h4>
+            <p class="mb-3">Que bueno verte de vuelta.</p>
             <div class="flash-message" data-flash-message="@if(session()->has('loginError')) {{ session('loginError') }} @endif"></div>
             <div class="flash-message-register" data-flash-message="@if(session()->has('registerBerhasil')) {{ session('registerBerhasil') }} @endif"></div>
             <form id="formAuthentication" class="mb-3" action="/login" method="POST">
               @csrf
               <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
+                <label for="username" class="form-label">Usuario</label>
                 <input type="text" class="form-control @error('username') is-invalid @enderror" id="username" name="username" value="{{ old('username') }}" placeholder="Enter your username" autocomplete="off" required />
                 @error('username')
                 <div class="invalid-feedback">
@@ -52,7 +52,7 @@
               </div>
               <div class="mb-4 form-password-toggle">
                 <div class="d-flex justify-content-between">
-                  <label class="form-label" for="password">Password</label>
+                  <label class="form-label" for="password">Contraseña</label>
                 </div>
                 <div class="input-group input-group-merge">
                   <input type="password" id="password" class="form-control" name="password" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" autocomplete="off" required />

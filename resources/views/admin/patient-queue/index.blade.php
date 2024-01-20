@@ -31,7 +31,7 @@
       <div class="card-header d-flex align-items-center justify-content-between" style="margin-bottom: -0.7rem;">
         <div class="justify-content-start">
           <button type="button" class="btn btn-xs btn-dark fw-bold p-2 buttonAddPatientQueue" data-bs-toggle="modal" data-bs-target="#formModalAdminAddPatientQueue">
-            <i class='bx bx-receipt fs-6'></i>&nbsp;AMBIL ANTRIAN
+            <i class='bx bx-receipt fs-6'></i>&nbsp;pruebaaa
           </button>
         </div>
         <div class="justify-content-end">

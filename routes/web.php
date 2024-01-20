@@ -28,10 +28,14 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/logout', function () {
     return redirect('/');
-})
+});
 
 // dashboard admin
 Route::get('/admin/dashboard',  [AdminDashboardController::class, 'index'])->middleware('admin');
+
+//Prueba////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Route::get('/admin/PRUEBA', [AdminDataPasienController::class, 'index'])->middleware('admin');
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // data pasien
 Route::get('/admin/pasien', [AdminDataPasienController::class, 'index'])->middleware('admin');
