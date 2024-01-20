@@ -28,7 +28,7 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/logout', function () {
     return redirect('/');
-});
+})
 
 // dashboard admin
 Route::get('/admin/dashboard',  [AdminDashboardController::class, 'index'])->middleware('admin');
