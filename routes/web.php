@@ -6,7 +6,8 @@ use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\AdminSettingsController;
 use App\Http\Controllers\AdminDataPasienController;
 use App\Http\Controllers\AdminAntrianPasienController;
-
+use App\Http\Controllers\AdminDatapruebaController;
+use App\Http\Controllers\ControllerModulo;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,9 +34,8 @@ Route::get('/logout', function () {
 // dashboard admin
 Route::get('/admin/dashboard',  [AdminDashboardController::class, 'index'])->middleware('admin');
 
-//Prueba////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-Route::get('/admin/PRUEBA', [AdminDataPasienController::class, 'index'])->middleware('admin');
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//MODULO 0
+Route::get('/admin/modulo0', [ControllerModulo::class, 'index'])->middleware('admin');
 
 // data pasien
 Route::get('/admin/pasien', [AdminDataPasienController::class, 'index'])->middleware('admin');
@@ -64,9 +64,9 @@ Route::get('/admin/antrian/skip', function () {
 Route::get('/admin/antrian/search', [AdminAntrianPasienController::class, 'search'])->middleware('admin');
 
 // pasien terlambat
-Route::get('/admin/daftar-antrian-terlambat', [AdminAntrianPasienController::class, 'daftarAntrianTerlambat'])->middleware('admin');
-Route::get('/admin/daftar-antrian-terlambat/search', [AdminAntrianPasienController::class, 'searchAntrianTerlambat'])->middleware('admin');
-Route::post('/admin/daftar-antrian-terlambat/confirm', [AdminAntrianPasienController::class, 'confirmPasienTerlambat'])->middleware('admin');
+Route::get('/admin/daftar-antrian-terlambat', [AdminAntrianPasienController::class, 'daftarAntrianTerlambat'])->middleware('admin');//////////////////////////////////////////////////////
+Route::get('/admin/daftar-antrian-terlambat/search', [AdminAntrianPasienController::class, 'searchAntrianTerlambat'])->middleware('admin');//////////////////////////////////////////////////////
+Route::post('/admin/daftar-antrian-terlambat/confirm', [AdminAntrianPasienController::class, 'confirmPasienTerlambat'])->middleware('admin');//////////////////////////////////////////////////////
 Route::get('/admin/daftar-antrian-terlambat/confirm', function () {
     return redirect('/admin/daftar-antrian-terlambat');
 })->middleware('admin');

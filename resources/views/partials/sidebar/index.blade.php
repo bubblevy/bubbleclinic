@@ -11,10 +11,10 @@
     <div>Registrar Datos</div>
   </a>
 </li>
-<li class="menu-item {{ Request::is('admin/PRUEBA*') ? 'active' : '' }}">
-  <a class="menu-link cursor-pointer" onclick="window.location.href='/admin/PRUEBA'">
+<li class="menu-item {{ Request::is('admin/modulo0*') ? 'active' : '' }}">
+  <a class="menu-link cursor-pointer" onclick="window.location.href='/admin/modulo0'">
     <i class="menu-icon tf-icons bx bx-street-view"></i>
-    <div>PRUEBA DE MODULOS</div>
+    <div>MODULO 0</div>
   </a>
 </li>
 <li class="menu-item {{ Request::is('admin/daftar-antrian-terlambat*') ? 'active' : '' }}">

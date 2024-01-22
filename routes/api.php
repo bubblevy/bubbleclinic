@@ -5,7 +5,7 @@ use App\Http\Controllers\Api\ClinicController;
 use App\Http\Controllers\Api\PatientsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Api\AdminDatapruebaController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -27,3 +27,4 @@ Route::get('/antrian/total', [PatientsController::class, 'totalPatients']);
 Route::get('/pasien/search', [PatientsController::class, 'search']);
 Route::get('/clinic/detail', [ClinicController::class, 'detail']);
 Route::get('/dokter/detail', [DokterController::class, 'detail']);
+Route::get('/dokter/detail', [AdminDatapruebaController::class, 'search']);

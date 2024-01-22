@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         Application::create([
-            'name_app' => 'PRUEBA',
+            'name_app' => 'BubbleClinic',
             'description_app' => 'BubbleClinic adalah klinik kesehatan terbaik & terpercaya nomor satu di Dunia.',
             'open_days' => '1',
             'close_days' => "5",
