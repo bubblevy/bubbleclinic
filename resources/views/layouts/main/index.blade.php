@@ -86,10 +86,11 @@
           <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
             <div class="navbar-nav">
               <div class="nav-item d-flex d-none d-lg-block" style="margin-top: 1rem;">
+              <!-- Nombre Administrator -->
                 @php
                 $currentTime = now();
                 $hour = $currentTime->hour;
-                if ($hour >= 5 && $hour < 11) { $greeting='Selamat Pagi' ; } elseif ($hour>= 11 && $hour < 15) { $greeting='Selamat Siang' ; } elseif ($hour>= 15 && $hour < 18) { $greeting='Selamat Sore' ; } else { $greeting='Selamat Malam' ; } @endphp<h5>{{ $greeting }},&nbsp;<strong>{{ auth()->user()->name }}@if(auth()->user()->is_admin)&nbsp;<i class='bx bxs-badge-check text-primary' style="font-size: 1rem; margin-bottom:2px;" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="auto" title="Administrator"></i>@endif</strong></h5>
+                if ($hour >= 5 && $hour < 11) { $greeting='Argenis Pagi' ; } elseif ($hour>= 11 && $hour < 15) { $greeting='Argenis Siang' ; } elseif ($hour>= 15 && $hour < 18) { $greeting='Argenis Sore' ; } else { $greeting='Argenis Malam' ; } @endphp<h5>{{ $greeting }},&nbsp;<strong>{{ auth()->user()->name }}@if(auth()->user()->is_admin)&nbsp;<i class='bx bxs-badge-check text-primary' style="font-size: 1rem; margin-bottom:2px;" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="auto" title="Administrator"></i>@endif</strong></h5>
               </div>
             </div>
             <ul class="navbar-nav flex-row ms-auto">

@@ -27,4 +27,3 @@ Route::get('/antrian/total', [PatientsController::class, 'totalPatients']);
 Route::get('/pasien/search', [PatientsController::class, 'search']);
 Route::get('/clinic/detail', [ClinicController::class, 'detail']);
 Route::get('/dokter/detail', [DokterController::class, 'detail']);
-Route::get('/dokter/detail', [AdminDatapruebaController::class, 'search']);
