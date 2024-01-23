@@ -8,6 +8,7 @@ use App\Http\Controllers\AdminDataPasienController;
 use App\Http\Controllers\AdminAntrianPasienController;
 use App\Http\Controllers\AdminDatapruebaController;
 use App\Http\Controllers\ControllerModulo;
+use App\Http\Controllers\ControllerModulo1;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,6 +37,8 @@ Route::get('/admin/dashboard',  [AdminDashboardController::class, 'index'])->mid
 
 //MODULO 0
 Route::get('/admin/modulo0', [ControllerModulo::class, 'index'])->middleware('admin');
+//MODULO 1
+Route::get('/admin/modulo1', [ControllerModulo1::class, 'index'])->middleware('admin');
 
 // data pasien
 Route::get('/admin/pasien', [AdminDataPasienController::class, 'index'])->middleware('admin');

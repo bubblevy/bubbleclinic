@@ -17,6 +17,12 @@
     <div>MODULO 0</div>
   </a>
 </li>
+<li class="menu-item {{ Request::is('admin/modulo1*') ? 'active' : '' }}">
+  <a class="menu-link cursor-pointer" onclick="window.location.href='/admin/modulo1'">
+    <i class="menu-icon tf-icons bx bx-street-view"></i>
+    <div>MODULO 1</div>
+  </a>
+</li>
 <li class="menu-item {{ Request::is('admin/daftar-antrian-terlambat*') ? 'active' : '' }}">
   <a class="menu-link cursor-pointer" onclick="window.location.href='/admin/daftar-antrian-terlambat'">
     <i class="menu-icon tf-icons bx bx-recycle"></i>
