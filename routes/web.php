@@ -10,6 +10,7 @@ use App\Http\Controllers\AdminDatapruebaController;
 use App\Http\Controllers\ControllerModulo;
 use App\Http\Controllers\ControllerModulo3;
 use App\Http\Controllers\ControllerModulo1;
+use App\Http\Controllers\ControllerFiles;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -44,6 +45,8 @@ Route::get('/admin/modulo1', [ControllerModulo1::class, 'index'])->middleware('a
 //MODULO 3
 Route::get('/admin/modulo3', [ControllerModulo3::class, 'index'])->middleware('admin');
 
+// Importacion de Archivos hacia la base de datos.
+Route::get('/admin/files', [ControllerFiles::class, 'index'])->middleware('admin');
 
 // data pasien
 Route::get('/admin/pasien', [AdminDataPasienController::class, 'index'])->middleware('admin');

@@ -8,9 +8,17 @@
 <li class="menu-item {{ Request::is('admin/antrian*') ? 'active' : '' }}">
   <a class="menu-link cursor-pointer" onclick="window.location.href='/admin/antrian'">
     <i class="menu-icon tf-icons bx bx-street-view"></i>
-    <div>Registrar Datos</div>
+    <div>Daftra Antrian</div>
   </a>
 </li>
+
+<li class="menu-item {{ Request::is('admin/files*') ? 'active' : '' }}">
+  <a class="menu-link cursor-pointer" onclick="window.location.href='/admin/files'">
+    <i class="menu-icon tf-icons bx bx-street-view"></i>
+    <div>Registro de Datos</div>
+  </a>
+</li>
+
 <li class="menu-item {{ Request::is('admin/modulo0*') ? 'active' : '' }}">
   <a class="menu-link cursor-pointer" onclick="window.location.href='/admin/modulo0'">
     <i class="menu-icon tf-icons bx bx-street-view"></i>
