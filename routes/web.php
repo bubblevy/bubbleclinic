@@ -47,6 +47,7 @@ Route::get('/admin/modulo3', [ControllerModulo3::class, 'index'])->middleware('a
 
 // Importacion de Archivos hacia la base de datos.
 Route::get('/admin/files', [ControllerFiles::class, 'index'])->middleware('admin');
+Route::get('/admin/files', [ControllerFiles::class, 'file'])->middleware(('admin'));
 
 // data pasien
 Route::get('/admin/pasien', [AdminDataPasienController::class, 'index'])->middleware('admin');
