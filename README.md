@@ -1,4 +1,4 @@
-<p align="center"><kbd><img src="https://www.imghippo.com/images/1701368648.png" width="100%" alt="BubbleClinic Demo"></kbd></p>
+<p align="center"><kbd><img src="https://drive.google.com/file/d/1-1ReC4vMe8SAp9R3L6SxLP_TyrqbPJ8j/view?usp=sharing" width="100%" alt="BubbleClinic Demo"></kbd></p>
 
 ## About BubbleClinic
 
