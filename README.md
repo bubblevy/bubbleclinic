@@ -1,4 +1,4 @@
-<p align="center"><kbd><img src="https://haibubble.com/static-images/bubbleclinic.png" width="100%" alt="BubbleClinic Demo"></kbd></p>
+<p align="center"><kbd><img src="https://raw.githubusercontent.com/bubblevy/bubbleclinic/main/public/assets/img/demo.png" width="100%" alt="BubbleClinic Demo"></kbd></p>
 
 ## About BubbleClinic
 
